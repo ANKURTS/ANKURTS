@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankur T S - Resume</title>
+    <style>
+        
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: green;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 0;
+            background: url('ANKUR T S 2nd Photo.jpg') center/cover no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            color: #ecf0f1;
+            position: relative;
+            z-index: 1;
+            filter: brightness(70%);
+            height: 80vh;
+        }
+
+        header h1 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 3rem;
+        }
+
+        header p {
+            font-size: 2rem;
+            color: white;
+        }
+
+        nav {
+            background-color: rgba(52, 152, 219, 0.7);
+            overflow: hidden;
+            position: relative;
+            z-index: 2;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #2980b9;
+            color: #ffffff;
+            padding: 14px 16px;
+        }
+
+        section {
+            margin: 30px 20px;
+            padding: 20px;
+            border-radius: 8px;
+            position: relative;
+            z-index: 1;
+        }
+
+        #home {
+            background-color: purple;
+        }
+
+        #home h2 {
+            color: magenta;
+        }
+
+        #home p {
+            color: aqua;
+        }
+
+        #home p:hover {
+            color: yellow;
+        }
+
+        p {
+            line-height: 1.5;
+            color: #555;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li::before {
+            content: "•";
+            color: #3498db;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        #about {
+            background-color: red;
+        }
+
+        #about h2 {
+            color: yellow;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            text-align: justify;
+        }
+
+        #about p {
+            line-height: 1.6;
+            color: yellow;
+        }
+
+        #about p:hover {
+            color: aqua;
+            transition: color 0.3s ease;
+        }
+
+        #education {
+            background-color: black;
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+        }
+
+        #education h2 {
+            color: #007bff;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        #education p {
+            line-height: 1.6;
+            color: white;
+        }
+
+        #education p:hover {
+            color: darkmagenta;
+            transition: color 0.3s ease;
+        }
+
+        .contact {
+            margin-top: 30px;
+            padding: 20px;
+            border-radius: 8px;
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            background-color: #e74c3c;
+        }
+
+        .contact p {
+            margin: 10px 0;
+            color: #ecf0f1;
+        }
+
+        .social-icons img {
+            max-width: 30px;
+            height: auto;
+            margin: 0 10px;
+        }
+
+        .footer {
+            margin-top: 30px;
+            text-align: center;
+            color: #777;
+        }
+
+        iframe {
+            width: 100%;
+        }
+
+        section p {
+            color: #34495e;
+        }
+
+        #accomplishments {
+            background-color: rgb(8, 221, 236);
+        }
+
+        #accomplishments h2 {
+            color: black;
+        }
+
+        #accomplishments p {
+            color: darkblue;
+        }
+
+        #accomplishments p:hover {
+            color: red;
+            transition: color 0.3s ease;
+        }
+
+        section img {
+            position: relative;
+            max-width: 70%;
+            height: auto;
+        }
+
+        div p {
+            color: white;
+        }
+
+        #gallery h2 {
+            color: whitesmoke;
+        }
+
+        /* Additional styles for the imaginary blog section */
+        .blog-section {
+    position: relative;
+    z-index: 1;
+    overflow: hidden; /* Ensure the video stays within the section boundaries */
+}  
+
+/* Adjust other styles as needed for the blog section */
+.blog-section {
+    margin: 30px 20px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #dc5c5c !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100vw !important;
+    border: 1px solid red;
+    height: 100%;
+
+}
+
+.blog-section h2 {
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+
+        form {
+            display: flex !important;
+            width: 100vw;
+            flex-direction: row !important;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        input,
+        textarea,
+        select {
+            width: 300px !important;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="checkbox"] {
+            width: auto;
+        }
+
+        input[type="submit"] {
+            background-color: #3498db;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+
+        .required {
+            color: red;
+        }
+        #images{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #textarea{
+            width: 90%;
+        }
+
+        #dropdown {
+        width: 150px; 
+        padding: 5px;
+        font-size: 14px; 
+        }
+        #blogForm{
+        width: 150px;
+        padding: 5px;
+        font-size: 14px;
+        }
+
+        
+
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#education">My Education</a>
+        <a href="#accomplishments">Accomplishments</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+        <a href="#blog">Blog</a>
+    </nav>
+    <header>
+        <h1>Ankur T S</h1>
+        <p id="typing-text"></p>
+    </header>
+
+    <section id="home">
+        <h2>Home</h2>
+        <p>Welcome to my online resume. Explore the sections below to learn more about me and my achievements.</p>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            Hello there! I'm ANKUR T S. I am a passionate individual at the crossroads of creativity and collaboration. Currently, I'm steering 
+            the ship as the Director of Branding, Marketing, and Outreach at TIFA, infusing my leadership journey with a fervor for shaping and 
+            amplifying organizational identities. Beyond the corporate landscape, my creative pursuits take flight in the form of my second fiction 
+            book—a realm where imagination knows no bounds. My foray into artificial intelligence is equally thrilling; completing the Prompt 
+            Engineering Course under the guidance of Mr. Jatan Shah, CEO of Skill Nation, has opened doors to the cutting-edge world of AI tools. 
+            Adding a melodious note to this diverse mix, I am also a Hindustani Vocalist with approximately 7 Years of Professional Training. Whether 
+            it's a harmonious note or a strategic plan, collaboration is at the heart of my endeavors. A team player through and through, my knack 
+            for fostering strong team bonds is a cornerstone of my professional approach. I am not just a professional but a versatile individual who 
+            brings a harmonious blend of skills, creativity, and team spirit to every project. It's not just about collaboration; it's a celebration 
+            of unique talents converging into a symphony of success.
+        </p>
+    </section>
+
+    <section id="education">
+        <h2>My Education</h2>
+        <p>Embarking on my educational odyssey at JSS Public School, I laid the initial bricks of my academic foundation. The pivotal transition 
+           to DPS in the fifth grade broadened my horizons and introduced me to diverse learning methodologies. However, the educational landscape 
+           underwent a profound transformation with the onset of the COVID-19 pandemic, necessitating an abrupt shift to virtual learning environments.
+           Undeterred, I navigated through these challenging times, adapting and embracing the new normal Subsequently, my academic journey led me to 
+           RV PU College, where I engaged in an intellectually stimulating two-year Pre-University Course specializing in Physics, Chemistry, Mathematics, 
+           and Biology. This immersive experience not only honed my analytical skills but also instilled a passion for the sciences. The rigorous curriculum 
+           and supportive learning environment at RV PU College laid the groundwork for my pursuit of higher education. Currently enrolled at RV University, 
+           I am fervently pursuing a BTech (Hons) in Computer Science and Engineering. This program aligns with my intrinsic curiosity for technology and its 
+           transformative potential. The journey through various educational institutions has not only equipped me with a robust academic foundation but has also 
+           cultivated resilience and adaptability, traits essential for navigating the dynamic landscape of today's world. My endeavors at RV University symbolize my 
+           dedication to advancing my knowledge and skills in the ever-evolving realm of computer science and engineering, fostering a holistic approach to learning 
+           and personal development. 
+        </p>
+    </section>
+
+    <section id="accomplishments">
+        <h2>Accomplishments</h2>
+        <p>I've had the privilege of spearheading transformative branding strategies as the Director of Branding, Marketing, and Outreach at TIFA.
+           The innovative approaches implemented during my tenure have not only heightened the organization's brand visibility but have also resulted
+           in increased market engagement. On the creative front, I'm a published author with two critically acclaimed fiction books to my name. 
+           These literary ventures reflect my passion for storytelling and the ability to captivate readers with imaginative narratives. My foray into
+           technology has been equally rewarding, with industry recognition for pioneering applications of AI tools in marketing and content creation. 
+           This acknowledgment underscores my commitment to staying ahead of industry trends and embracing technology in innovative ways. Beyond the corporate 
+           realm, I've taken on a leadership role in skill development initiatives. Through workshops and programs, I've empowered individuals in the fields 
+           of branding, marketing, and AI. As a guest speaker at conferences and events, I share valuable insights on the dynamic interplay between creativity, 
+           technology, and effective leadership in the modern business landscape. Adding a melodious note to my diverse skill set, I'm a Hindustani Vocalist who 
+           has received accolades for musical performances, blending excellence with a commitment to preserving cultural heritage. My collaborative spirit extends 
+           to successful projects with industry leaders, fostering partnerships that result in mutually beneficial ventures and innovations. Within TIFA, I've 
+           introduced innovative team-building initiatives that contribute to a positive work culture, enhancing both productivity and employee satisfaction. 
+           Recognizing the importance of mentorship, I actively guide emerging talents in branding, marketing, and AI, contributing to the growth and development 
+           of the next generation of professionals. Additionally, my commitment to social impact is evident in contributions to projects that leverage my branding 
+           and marketing expertise to make a positive difference in communities. In essence, I Ankur T S am an accomplished professional with a diverse skill set, 
+           a track record of success, and a continuous commitment to innovation across various domains. I have been recently nominated for the Young Achiever Award 
+           2023 by the Indian Achiever's Forum. Alongside all these achievements, I have been Invited as a guest in the upcoming HackerRank 2023 Summit at to be
+           held at the Conrad Hotel.
+        </p>
+        <img src="" alt="">
+    </section>
+        <section class="gallery" id="gallery">
+            <h2>Gallery</h2>
+            <div id="images">
+            <img src="ANKUR T S _ Sanchari.jpg" alt="Sanchari Theatre">
+            <img src="Best Project Award.jpg" alt="Best Project Award">
+            <img src="IFFI Goa with John Tornblad.jpg" alt="IFFI Goa with John Tornblad">
+        </div>
+        </section>
+    
+    
+
+    <section class="contact" id="contact">
+        <h2>Contact Information of ANKUR T S</h2>
+
+        <!-- Social Media Logos -->
+        <div class="social-icons">
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="Instagram Logo.png" alt="Instagram">
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank">
+                <img src="LinkedIn Logo.png" alt="LinkedIn">
+            </a>
+            <a href="mailto:ankursharath@gmail.com">
+                <img src="Gmail logo.jpg" alt="Gmail">
+            </a>
+        </div>
+    </section>
+
+    <!-- Imaginary Blog Section -->
+    <section class="blog-section" style="background: url('TIFA Video.mp4') no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
+        <h2>Blog</h2>
+        <form id="blogForm" onsubmit="submitForm()" style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between;">
+            <div style="flex: 1;">
+                <label for="name">Name <span class="required">*</span></label>
+                <input type="text" id="name" name="name" required>
+            </div>
+    
+            <div style="flex: 1;">
+                <label for="email">Email<span class="required">*</span></label>
+                <input type="email" id="email" name="email">
+            </div>
+    
+            <div style="flex: 1;">
+                <label for="birthdate">Birthdate<span class="required">*</span></label>
+                <input type="date" id="birthdate" name="birthdate">
+            </div>
+    
+            <div style="flex: 1;">
+                <label for="textarea">Text Area</label>
+                <textarea id="textarea" name="textarea" rows="4"></textarea>
+            </div>
+    
+            <div style="flex: 1;">
+                <label for="dropdown">What more?</label>
+                <select id="dropdown" name="dropdown">
+                    <option value="option1">More Content</option>
+                    <option value="option2">More Images</option>
+                    <option value="option3">More Blog Posts</option>
+                </select>
+            </div>
+    
+            <div style="flex: 1;">
+                <label for="blog-post1">Blog Posts</label>
+                <h3>Exciting Adventure</h3>
+                <p>Adventure, a transformative odyssey, unlocks uncharted realms of discovery, resilience, and camaraderie. Amid challenges, 
+                   it forges strengths, while shared triumphs create lasting bonds. A canvas of mindfulness, it inspires creativity, revealing 
+                   our untapped potential. Beyond comfort, adventure beckons us to embrace the extraordinary, defining our true selves.</p>
+                <div class="rating">
+                </div>
+            </div>
+    
+            <div style="flex: 1;">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    
+        <script>
+            function submitForm() {
+                event.preventDefault();
+                alert("Thank you for the feedback!");
+            }
+        </script>
+    </section>
+    
+
+
+    <div class="footer">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.7564918962685!2d77.49521447507558!3d12.923366287387598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bafad1d6f18a4b9%3A0xc6082c1a24eba0bf!2sRV%20University!5e0!3m2!1sen!2sin!4v1704475452593!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p>&copy; 2024 Ankur T S. All Rights Reserved.</p>
+    </div>
+
+    <script>
+        const terms = ["1st Sem Student at RV University", "Developer.", "Data Analyst.", "AI Engineer.", "Web Designer.", "Data Scientist." ,"Software Engineer."];
+let index = 0;
+let currentTerm = terms[index];
+let charIndex = 0;
+
+function type() {
+    const typingElement = document.getElementById('typing-text');
+    typingElement.innerText = currentTerm.slice(0, charIndex);
+    charIndex++;
+
+    if (charIndex > currentTerm.length) {
+        charIndex = 0;
+        index = (index + 1) % terms.length;
+        currentTerm = terms[index];
+        setTimeout(type, 1000); 
+    } else {
+        setTimeout(type, 150);
+    }
+}
+
+type();
+    </script>
+
+</body>
+
+</html>
